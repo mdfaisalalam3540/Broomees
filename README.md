@@ -79,9 +79,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 readme: |
-  # 🧹 Broomies Backend API
+  # 🧹 Broomees Backend API
 
-  **Broomies** is a backend-only RESTful API built using **Laravel (PHP)**.
+  **Broomees** is a backend-only RESTful API built using **Laravel (PHP)**.
   It manages users, relationships, hobbies, and a reputation scoring system
   while following production-grade backend engineering practices.
 
