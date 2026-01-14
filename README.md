@@ -350,6 +350,84 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
   ---
 
+  ## 📖 Deplyed API Reference
+
+  ### 🌐 Base URL (Production)
+
+      https://broomees-ck16.onrender.com/api
+
+  ---
+
+  ## 🔓 Public APIs (No Authentication Required)
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | POST | https://broomees-ck16.onrender.com/api/auth/register | Register a new user |
+  | POST | https://broomees-ck16.onrender.com/api/auth/token | Issue access token (login) |
+
+  ---
+
+  ## 🔐 Protected APIs  
+  *(Production environment)*  
+  *(Requires Authorization: Bearer `<ACCESS_TOKEN>`)*  
+  *(Rate limited + authenticated)*
+
+  ---
+
+  ### 👤 User APIs
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | GET | https://broomees-ck16.onrender.com/api/users | List all users |
+  | GET | https://broomees-ck16.onrender.com/api/users/{id} | Get user by ID |
+  | POST | https://broomees-ck16.onrender.com/api/users | Create user |
+  | PUT | https://broomees-ck16.onrender.com/api/users/{id} | Update user (optimistic locking) |
+  | DELETE | https://broomees-ck16.onrender.com/api/users/{id} | Delete user |
+
+  ---
+
+  ### 🤝 Relationship APIs
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | POST | https://broomees-ck16.onrender.com/api/users/{id}/relationships | Add relationship |
+  | DELETE | https://broomees-ck16.onrender.com/api/users/{id}/relationships | Remove relationship |
+
+  ---
+
+  ### 🎯 Hobby APIs
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | POST | https://broomees-ck16.onrender.com/api/users/{id}/hobbies | Add hobby to user |
+  | DELETE | https://broomees-ck16.onrender.com/api/users/{id}/hobbies | Remove hobby from user |
+
+  ---
+
+  ### 📊 Metrics APIs
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | GET | https://broomees-ck16.onrender.com/api/metrics/reputation | Get reputation metrics |
+
+  ---
+
+  ### 🔑 Token Management
+
+  | Method | Endpoint | Description |
+  |--------|----------|-------------|
+  | POST | https://broomees-ck16.onrender.com/api/auth/revoke | Revoke access token (logout) |
+
+  ---
+
+  ### 🧪 Authentication Example (Postman)
+
+  **Header**
+
+      Authorization: Bearer <your_token_here>
+
+---
+
   ## 🧪 Test Instructions
 
   **Testing Requirements (Mandatory)**  
