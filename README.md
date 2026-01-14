@@ -350,7 +350,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
   ---
 
-  ## 📖 Deplyed API Reference
+  ## 📖 Deployed API Reference
 
   ### 🌐 Base URL (Production)
 
